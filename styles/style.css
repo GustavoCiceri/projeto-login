@@ -57,4 +57,76 @@ div#form > h1 {
 
 div#form > p {
     font-size: 0.8em;
+} 
+
+form > div.campo {
+    background-color: #5f2c82;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 8px;
+    border: 2px solid #5f2c82;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #6bdbd8;
+    font-size: 1em;
+    width: calc(100% - 48px);
+    
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #367775;
+    
+}
+form > a.buttom {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #377775;
+    padding-top: 7px;
+}
+
+form > a.buttom:hover {
+    background-color: #6ce9e5;
+}
+
+form > a.buttom > span {
+    font-size: 0.8em;
 }
