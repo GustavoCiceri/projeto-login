@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/tablet.css">
-    <link rel="stylesheet" href="styles/.css">
 </head>
 <body>
     <main>
@@ -18,12 +18,21 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Welcome back. Log in to acess your account and be able to configure your environment.</p>
-                <form action="login.php" method="post">
-                    <div>
-                        <input type="email" name="email" id="iemail">
-                        <input type="password" name="senha" id="isenha">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="Your email" autocomplete="email" required maxlength="30">
+                        <label for="iemail">Login</label>
                     </div>
-                    <div><input type="submit" value="To enter"></div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Your passaword" autocomplete="current-password" required max="30" minlength="8">
+                        <label for="isenha">Password</label>
+                    </div>
+                    <input type="submit" value="To enter">
+                    <a href="esqueci.html">
+                        Forgot the password <span class="material-symbols-outlined">mail</span>
+                    </a>
                 </form>
             </div>
             
